@@ -20,6 +20,6 @@ func main() {
 		lb.serveProxy(rw, r)
 	})
 
-	fmt.Println("Serving requests at http://localhost:%s \n", lb.port)
+	fmt.Printf("Serving requests at http://localhost:%s \n", lb.port)
 	http.ListenAndServe(":"+lb.port, nil)
 }
